@@ -1,4 +1,4 @@
 # Lokaverkefni
 VEFÞ2VH
 
-## Hall+o
+## Hall-o
