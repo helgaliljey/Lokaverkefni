@@ -1,0 +1,71 @@
+.topnav {
+    background-color: var(--nc-d-lk-1); 
+    /*background-image: linear-gradient(to bottom right, /*#FFD700, #FFA500, #FF6347 /*#FF69B4);*/  
+    padding: 0 0;
+}
+
+.topmenu {
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top:3rem;
+    right: -30rem;
+    background-color: var(--nc-d-lk-1); 
+    /*background-image: linear-gradient(to bottom right, /*#FFD700, #FFA500, #FF6347 /*#FF69B4);*/
+    width: 80%;
+    z-index: 99;
+    padding: 2rem;
+    transition: all .5s ease;
+}
+
+.menuinput:checked ~ .topmenu {
+    right: 0;
+    transition: all .5s ease;
+}
+
+.topmenu a {
+    display: block;
+    color: var(--nc-lk-tx);
+    padding: .5rem;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.socialbutts a {
+    display: inline-block;
+}
+
+.menuinput {
+    display: none;
+}
+
+.menulabel {
+    color: var(--nc-ac-tx);
+    font-size: 2rem;
+
+    position: fixed;
+    top: .5rem;
+    right: 1rem;
+}
+
+/**** @media ******/
+@media screen and (min-width:48rem) {
+    .topmenu {
+        position: relative;
+        flex-flow: row;
+        max-width: 80rem;
+        margin: auto;
+        top: -.5rem;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        background: none;
+    }
+    .menulabel {
+        display: none;
+    }
+    .topnav {
+        padding: 1rem 0;
+    }
+}

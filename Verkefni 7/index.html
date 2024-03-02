@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML og CSS grunnur">
+    <meta name="author" content="HLE">
+    <title>Lokaverkefni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css copy/styles.css">
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body>
+  <nav class="topnav">
+    <input type="checkbox" class="menuinput" id="toggle">
+    <label for="toggle" class="menulabel">&#9776;</label>
+    <section class="topmenu">
+      <a href="index.html"><span class="icon-home"></span> Forsíða</a>
+      <a href="#dagskra"><span class="icon-calendar"></span> Dagskrá og Miðar</a>
+      <a href="#tonlistarfolk"><span class="icon-music"></span> Tónlistarfólk</a>
+      <a href="#um okkur"><span class="icon-user"></span> Um okkur</a>
+      <div class="socialbutts">
+        <a href="#"><span class="icon-facebook2"></span></a>
+        <a href="#"><span class="icon-instagram"></span></a>
+        <a href="#"><span class="icon-flickr3"></span></a>
+      </div>
+    </section>
+    
+  </nav>
+  <header>
+    <section class="landing container">
+      <div>
+        <span class="icon-logo logo-2 animate__animated animate__fadeIn animate__delay-2s animate__slow"></span>
+      </div>
+      <div>
+        <h1 class="titill animate__animated animate__backInRight">Vesturblíða</h1>
+      </div>
+    </section>
+  </header>
+  <div id="scroll-container">
+    <div id="scroll-text">ÞÚ MUNT EKKI SJÁ EFTIR AÐ KOMA Á BESTU TÓNLISTARHÁTÍÐINA Á LANDINU!</div>
+  </div>
+<section class="summary">
+  <caption>
+    <h3 id="dagskra" class="titill center">Dagskrá</h3>
+  </caption>
+  <table>       
+    <thead>
+      <tr>
+        <th scope="col">Dags.</th>
+        <th scope="col">Tímas.</th>
+        <th scope="col">Staðs.</th>
+        <th scope="col">Artisti</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row" data-label="Dags.">19.júlí</td>
+        <td data-label="Tímas.">kl. 19:00-21:00</td>
+        <td data-label="Staðs.">Litla Svið</td>
+        <td data-label="Artisti"><a class="button" href="#popup1">Raggy</a></td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Dags.">19.júlí</td>
+        <td data-label="Tímas.">kl. 21:00-23:00</td>
+        <td data-label="Staðs.">Litla Svið</td>
+        <td data-label="Artisti"><a class="button" href="#popup1">Crescented</a></td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Dags.">20.júlí</td>
+        <td data-label="Tímas.">kl. 19:30-21:30</td>
+        <td data-label="Staðs.">Stóra Svið</td>
+        <td data-label="Artisti"><a class="button" href="#popup1">Konni og krukkurnar</a></td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Dags.">19.júlí</td>
+        <td data-label="Tímas.">kl. 22:00-00:00</td>
+        <td data-label="Staðs.">Stóra Svið</td>
+        <td data-label="Artisti"><a class="button" href="#popup1">Klisja</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<br>
+<hr>
+<br>
+<footer>
+    <section>
+        <section class="chatbox">
+        <form action="#" method="dialog">
+            <h2 class="titill center">Miðakaup</h2>
+            <p>Hér að neðan geturu pantað þér miða</p><hr>
+            <p>
+                <label>Nafn:</label><br>
+                <input type="text" name="first_name" placeholder="Fullt nafn" required="">
+            </p>
+            <p>
+                <label>Símanúmer</label><br>
+                <input type="text" name="last_name" placeholder="000-0000" required="">
+            </p>
+            <p>
+                <label>Tölvupóstur</label><br>
+                <input type="email" name="email" placeholder="Email address" required="">
+            </p>
+            <p>
+                <label>Gerð miða</label><br>
+                <select>
+                    <option>Almennur miði</option>
+                    <option>Lúxus miði</option>
+                    <option>VIP miði</option>
+                    <option>VIP+ miði</option>
+                    <option>VIP MAX miði</option>
+                </select>
+            </p>
+            <p>
+              <label>Borgun</label><br>
+              <select>
+                  <option>Við komu</option>
+                  <option>Aur</option>
+                  <option>Leggja inn á bankareikning</option>
+              </select>
+          </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="terms">
+                    Skrá mig á póstlistann</a>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Senda">
+            </p>
+        </form>
+    </section>
+    </section>
+    <hr>
+    <h2 id="tonlistarfolk" class="titill center">Tónlistarfólk</h2>
+    <div class="col-2"><!--Lína 1-->
+      <div class="col-2 blueBg"><!--Crescented-->
+        <div class="image-container">
+          <figure>
+            <img src="images/Screenshot 2024-02-23 221953.png" width="500px" height="auto">
+          </figure>
+        </div>
+        <div class="paddingtexti">
+          <h3 class="titill">Crescented</h3>
+          <p>Crescented býr til allskonar tónlist og elskar allar gerðir en hefur mest verið að gefa út rapp. Fyrsta platan kom út í Desember á seinasta ári og fékk ágæta spilun. Á plötunni komu fram tónlistarfólk eins og Nuclear Nathan og Juno Paul sem hafa keppt áður. Nýlega hefur Crescented samt verið að gera nýja tónlist sem er aðeins nær rokk og indí en heldur samt í rappið ennþá.</p>
+        </div>
+      </div><!--Crescented-->
+      <div class="col-2 blueBg"><!--Klisja-->
+        <div class="image-container">
+          <figure>
+            <img src="images/Klisja.jpg" width="500px" height="auto">
+          </figure>
+        </div>
+        <div class="paddingtexti">
+          <h3 class="titill">Klisja</h3>
+          <p>Hljómsveitin Klisja er ný, fersk og uppfull af óraunhæfum dagdraumum. Við leikum okkur með dálítið óhefðbundna hljóðfæraskipan, þar sem selló og fiðla mæta gítar og trommum.</p>
+        </div>
+      </div><!--Klisja-->
+    </div>
+    <br>
+    <div class="col-2"><!--Lína 2-->
+      <div class="col-2 blueBg"><!--Konni og krukkurnar-->
+        <div class="image-container">
+          <figure>
+            <img src="images/Konni_og_krukkurnar.jpg" width="500px" height="auto">
+          </figure>
+        </div>
+        <div class="paddingtexti">
+          <h3 class="titill">Konni og krukkurnar</h3>
+          <p>Konni og Krukkurnar er íslensk hljómsveit sem blandar þungarokki, blús og íslenskum texta á einstakan hátt. Hljómsveitin hefur náð miklum vinsældum með upphaflegri tónlist og sterkum textum sem fjalla um líf og líðan á Íslandi.</p>
+        </div>
+      </div><!--Konni og krukkurnar-->
+      <div class="col-2 blueBg"><!--Raggy-->
+        <div class="image-container">
+          <figure>
+            <img src="images/IMG_0620.jpg" width="500px" height="auto">
+          </figure>
+        </div>
+        <div class="paddingtexti">
+          <h3 class="titill">Raggy</h3>
+          <p>Raggy er 18 ára tónlistarmaður sem hefur skapað sér nafn í íslenska tónlistarheiminum. Með sérstökum kynningarstíl og frumlegum tónlistarhugmyndum hefur hann þegar fangað athygli fjöldans. Tónlistin hans er andvíg og fjölbreytt og hann hefur nú þegar gefið út nokkur lög sem hafa náð stórum vinsældum á vinsældalistum landsins.</p>
+        </div>
+      </div><!--Raggy-->
+    </div>
+    <hr>
+    <h2 id="um okkur" class="titill center">Um okkur</h2>
+    <div class="col-2 blueBg"><!--hátíð og uppruni-->
+      <div class="image-container">
+        <figure>
+          <img src="images/MusicFestival1.jpg" width="500px" height="auto">
+        </figure>
+      </div>
+      <div class="paddingtexti">
+        <h3 class="titill">Hátíðin og uppruni hennar</h3>
+        <p>Vesturblíða Tónlistarhátíðin á Bíldudal er árlegur viðburður sem hefur orðið ráðandi þáttur í tónlistarlífinu síðustu árin. Hátíðin, sem var fyrst sett upp árið 2012, hefur þróast í einn af vinsælustu tónlistarviðburðunum á landinu. Stofnendur hátíðarinnar, þar á meðal Mikkelína Sigurðardóttir, Jón Snær Kaldal og Sóley Marín Traustadóttir, höfðu áhuga á að skapa tónlistarviðburð sem býður upp á nýsköpun, fjölbreytni og námskeið fyrir tónlistarmenn og -konur á öllum stigum.</p>
+      </div>
+    </div><!--hátíð og uppruni-->
+    <br>
+    <div class="col-2 blueBg"><!--Tónlist og framboð-->
+      <div class="paddingtexti">
+        <h3 class="titill">Tónlist og framboð</h3>
+        <p>Vesturblíða Tónlistarhátíðin skartar úrvali fjölbreyttra tónlistarverka frá upplifunarríkum listamönnum. Á hátíðinni hefur verið heimilið við margslungið tónlistarframboð, þar sem tónlistarmenn og -konur eins og Crescented, Klisja, Raggy og Konni og Krukkurnar flytja verk sín. Frá klassískri tónlist til poppmúsík, elektronískrar tónlistar og öllum millistigum hafa sýnt sín verk og kynnt ný tónlistarhugmyndir á Vesturblíðu. Þessi fjölbreytni í tónlistarstefnu hefur dregið til sín tónlistarunnendur úr öllum hornum landsins og tryggt að hátíðin heldur áfram að þróast og þróa sín listrænu sjónarmið.</p>
+      </div>
+      <div class="image-container">
+        <figure>
+          <img src="images/Business people.jpg" width="500px" height="auto">
+        </figure>
+      </div>
+    </div><!--Tónlist og framboð-->
+    <hr>
+        <section class="container col-3">
+          <nav>
+            <ul class="footerUl">
+              <li><span class="icon-link"></span> Eveniet ducimus pariatur voluptate</li>
+              <li><span class="icon-link"></span> Vitae animi, sed provident fuga</li>
+              <li><span class="icon-link"></span> Lorem ipsum dolor sit amet consectetur</li>
+              <li><span class="icon-link"></span> Provident sit aliquid a consequuntur</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="footerUl">
+              <li><span class="icon-attachment"></span> Eveniet ducimus pariatur voluptate</li>
+              <li><span class="icon-attachment"></span> Vitae animi, sed provident fuga</li>
+              <li><span class="icon-attachment"></span> Lorem ipsum dolor sit amet consectetur</li>
+              <li><span class="icon-attachment"></span> Provident sit aliquid a consequuntur</li>
+            </ul>
+          </nav>
+          <dl>              <!--Description list -->
+            <dt>Nafn</dt>
+              <dd>Helga Lilja Eyþórsdóttir</dd>
+            <dt>Tölvupóstur</dt>
+              <dd>lorem@lorem.is</dd>
+            <dt>Vefhönnun</dt>
+              <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+          </dl>
+        </section>
+        <p class="center">&copy 2024 HLE</p>
+    </footer>
+    <a class="takki" href="#spjallbox" title="Spjallbox"><b><span class="icon-bubbles"></span></b></a>
+  <!--Spjallbox-->
+  <div id="spjallbox" class="overlay">
+    <div class="spjallbox">
+      <h2>Spjallbox</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+          <form action="#" method="get">
+            <label for="idname">Nafn: </label><br>
+            <input type="text" name="nafn" id="idname"><br>
+            <label for="postur">Tölvupóstur: </label><br>
+            <input type="text" name="postur" id="postur"><br>
+            <label for="skilabod">Skilaboð: </label><br>
+            <textarea cols="40" rows="5" placeholder="skilaboð"></textarea><br>
+            <input type="submit" value="Senda">
+          </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

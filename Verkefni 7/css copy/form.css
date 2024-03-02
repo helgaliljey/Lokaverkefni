@@ -1,0 +1,19 @@
+/* chatbox */
+
+.chatbox {
+    /*
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 20rem;
+    border: 1px solid var(--nc-bg-1);*/
+    padding: 1rem;    
+}
+
+.chatbox input[type="text"],
+.chatbox input[type="email"],
+.chatbox select,
+.chatbox textarea {
+    width: 100%;
+    background: var(--nn-chat);
+}
